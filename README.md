@@ -1,2 +1,19 @@
-# Day-2Counting-Sort-1
-#Day 2Counting Sort 1
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] frequencies = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            int num = input.nextInt();
+            frequencies[num] = frequencies[num] + 1;
+        }
+        
+        for(int i = 0; i < frequencies.length; i++)
+        {
+            System.out.print(frequencies[i]+" ");
+        }
+    }
+}
+
